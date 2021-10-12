@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        /*<header> - CABEÇALHO
+          <main> - CONTEÚDO PRINCIPAL
+          <footer> - RODAPÉ
+          <nav> - MENU, NAVEGAÇÃO
+          <section> - ASSUNTOS que geralmente se usa dentro do <main> EX: <section id="assuntos">
+          <article> - ARTIGOS DE NOTÍCIAS
+          <aside> - RELATIVO AO ARTIGO*/
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: brown;
+                margin: 0px;
+            }
+            header{
+                background-color: rgb(41, 36, 36);
+                padding: 10px;
+                margin: 10px;
+                }
+                nav{
+                    background-color: lightblue;
+                    padding: 3px;
+                    box-shadow: 4px 4px 20px white;
+                    
+                }
+                nav > a {
+                    text-decoration: none;
+                    color: blue;
+                    font-weight: bold;
+                    margin-right: 80px;
+                }
+                nav > a:hover{
+                    text-decoration: underline;
+                }
+                main{
+                    background-color: rgb(255, 255, 255);
+                    border-radius: 5px 0px;
+                    box-shadow: 4px 4px 4px 4px white;
+                }
+                footer{
+                    background-color: black;
+                    color: white;
+                    text-align: center;
+                    padding: 4px;
+                    margin: 0px;
+                }
+                footer > p{
+                    margin: 0px;
+                }
+                div#bola{
+                    height: 100px;
+                    width: 100px;
+                    margin: 10px;
+                    background-color: black;
+                    border-radius: 50%;
+                    
+                }
+                article{
+                    background-color: rgb(150, 191, 232);
+                    padding: 5px;
+                }
+                article > aside{
+                    background-color: rgb(28, 156, 199);
+                }
+            h1{
+                color: brown;
+            }
+            a{
+                color: blue;
+            }
+                        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Agenda</a>
+            <a href="#">Discografia</a>
+            <a href="#">Carreira</a>
+            <a href="#">Quadros</a>
+            <a href="#">Contatos</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esporte Política Tecnologia</p>
+
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícias do Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum illo tenetur inventore dolore error doloremque tempore distinctio quae quam obcaecati. Velit iste vitae voluptates animi debitis laudantium odio voluptas magni.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum illo tenetur inventore dolore error doloremque tempore distinctio quae quam obcaecati. Velit iste vitae voluptates animi debitis laudantium odio voluptas magni.</p>
+                <aside>
+                    Artigo escrito por Aldemir 
+
+                </aside>
+
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+
+    </footer>
+    <div id="bola">
+
+    </div>
+    
+</body>
+</html>
