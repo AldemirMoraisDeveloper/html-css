@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        caption {
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        col.cnome {
+            background-color: lightblue;
+        }
+        col.cidade {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade"> <!--Podemos também usar o Span para diminuindo as classes-->
+            <col class="cprof">  <!--col class="cgrupo" span="2" com isso você tira Cidade e Cprof.-->
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Luiza</td>
+            <td>F</td>
+            <td>27</td>
+            <td>Secretária</td>
+        </tr>
+        <tr>
+            <td>Amélia</td>
+            <td>F</td>
+            <td>38</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Guilherme</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Fernanda</td>
+            <td>F</td>
+            <td>30</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Luiz</td>
+            <td>M</td>
+            <td>50</td>
+            <td>Engenheiro</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>43</td>
+            <td>Professor</td>
+        </tr>
+    </table>
+</body>
+</html>
